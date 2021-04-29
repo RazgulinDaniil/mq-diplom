@@ -45,7 +45,7 @@ ul {
     width: 100%;
 
     background-color: #ffffff;
-    background: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg") center no-repeat;
+    background: url("/Images/banner_header.jpg") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;   
 }
