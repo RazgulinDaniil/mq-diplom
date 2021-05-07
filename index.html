@@ -8,7 +8,39 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="head">
+    <div class="popup">
+    <div class="popup-content">
+        <a href="#0" class="close"></a>
+        <h2 class="popup_title">ваш фидбек</h2>
+        <form name="popup-form">
+          <p class="label-popup label-popup-select">Как часто вы заходите на сайт?</p>
+          <select class="popup_select">
+            <option>Почти каждый день</option>
+            <option>Раз в несколько дней</option>
+            <option>Раз в несколько недель</option>
+            <option>Несколько раз в год</option>
+          </select>
+          <div class="popup-radio-container">
+          <span class="label-popup">Вы подписаны на e-mail рассылку?</span>
+          <label class="radio-group">
+            <input type="radio" class="radio-pin" name="radio-group" value="yes">
+            <span class="radio-item">Да</span>
+          </label>
+          <label class="radio-group">
+            <input type="radio" class="radio-pin" name="radio-group" value="no">
+            <span class="radio-item">Нет</span>
+          </label> 
+          </div>
+          <div class="popup-textarea-container">
+            <span class="label-popup">Расскажите, какой контент вы хотели бы видеть
+              на нашем сайте?</span>
+            <textarea class="popup-textarea" placeholder="Может больше рецептов?"></textarea>
+          </div>
+          <button class="popup-button">Отправить</button>
+        </form>
+    </div>
+    </div>
+      <header class="head">
         <div class="head-wrapper">
          <div class="content-head">
           <a href="/"><img src="/Images/noemi-logo.png" alt="NOEMI" class="logo"></a>
@@ -42,7 +74,7 @@
                     <li class="category-item"><a href="#0" class="category">interior</a></li>
                   </ul>
 
-                  <h2 class="trend-title"><a href="#0" class="trend-title-link">Сейчас в тренде: сад на подоконнике</a></h2>
+                  <h3 class="trend-title"><a href="#0" class="trend-title-link">Сейчас в тренде: сад на подоконнике</a></h3>
                 </div>       
             </div>
 
@@ -51,7 +83,7 @@
                   <ul class="chapter-categories">
                     <li class="category-item"><a href="#0" class="category">food</a></li>
                   </ul>
-                  <h2 class="trend-title"><a href="#0" class="trend-title-link">сыры на красивых картинках из интернета: какие они на вкус?</a></h2>
+                  <h3 class="trend-title"><a href="#0" class="trend-title-link">сыры на красивых картинках из интернета: какие они на вкус?</a></h3>
                 </div>      
             </div>
 
@@ -61,7 +93,7 @@
                     <li class="category-item"><a href="#0" class="category">lifestyle</a></li>
                     <li class="category-item"><a href="#0" class="category">travel</a></li>
                   </ul>
-                  <h2 class="trend-title"><a href="#0" class="trend-title-link">собираемся в первый поход в горы</a></h2>
+                  <h3 class="trend-title"><a href="#0" class="trend-title-link">собираемся в первый поход в горы</a></h3>
                 </div>     
             </div>
 
@@ -71,7 +103,7 @@
                     <li class="category-item"><a href="#0" class="category">food</a></li>
                     <li class="category-item"><a href="#0" class="category">health</a></li>
                   </ul>
-                    <h2 class="trend-title"><a href="#0" class="trend-title-link">Сейчас в тренде: сколько витамина с в лимонах?</a></h2>
+                    <h3 class="trend-title"><a href="#0" class="trend-title-link">Сейчас в тренде: сколько витамина с в лимонах?</a></h3>
                 </div>     
             </div>
               
@@ -295,13 +327,65 @@
           </section>
       
       </aside>
-      </div>
-      <div class="shop_container">
-        
-      </div>
+
+
       
       </div>
-        
+      </div>
+
+      <div class="shop_container">
+        <h2 class="shop-title">наши изделия</h2>
+        <div class="shop-list">
+
+           <div class="shop-list-item">
+              <picture>
+                <img class="shop_pic" src="/Images/shop1.jpg" alt="Подушки">
+              </picture>
+              <h3 class="chapter-title-link"><a href="#0" class="chapter-link">подушки на диван</a></h3>
+              <p class="shop-item-text">Набор из двух подушек с модными принтами. Видео о создании <a href="#0" class="shop-text-link">здесь</a>.</p>
+              <div class="shop-price">
+                <div class="group_price">
+                  <div class="old_price">1000 ₽</div>
+                  <div class="new_price">800 ₽</div>
+                </div>
+                
+                <div class="to_shop_button"><a href="" class="to_shop_link">в магазин</a></div>
+             </div>
+           </div>
+
+           <div class="shop-list-item">
+            <picture>
+              <img class="shop_pic" src="/Images/shop2.jpg" alt="кукла зайчик">
+              </picture>
+              <h3 class="chapter-title-link"><a href="#0" class="chapter-link">кукла «зайчик»</a></h3>
+              <p class="shop-item-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#0" class="shop-text-link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
+              <div class="shop-price">
+              <div class="group_price">
+                <div class="new_price">3500 ₽</div>
+              </div>
+              
+              <div class="to_shop_button"><a href="" class="to_shop_link">в магазин</a></div>
+              </div>
+           </div>
+
+           <div class="shop-list-item">
+            <picture>
+              <img class="shop_pic" src="/Images/shop3.jpg" alt="Шестиугольная рамка и ваза">
+            </picture>
+            <h3 class="chapter-title-link"><a href="#0" class="chapter-link">шестиугольная рамка</a></h3>
+            <p class="shop-item-text">Необычная рамка для украшения дома из видео <a href="#0" class="shop-text-link">«Как сделать рамку из подручных средств за 30 минут»</a> </p>
+            <div class="shop-price">
+              <div class="group_price">
+                <div class="old_price">500 ₽</div>
+                <div class="new_price">400 ₽</div>
+              </div>
+              
+              <div class="to_shop_button"><a href="" class="to_shop_link">в магазин</a></div>
+           </div>
+
+           </div>
+           </div>
+        </div>
       <footer class="footer-shell">
         <div class="footer-shell-wrapper">
         <address class="footer-container">
