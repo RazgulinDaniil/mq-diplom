@@ -38,7 +38,6 @@ ul {
 }
 /* popup */
 .popup{
-    display: none;
     width:100%;
     min-height:100%;
     background-color: rgba(0,0,0,0.5);
@@ -46,6 +45,10 @@ ul {
     position:fixed;
     top:0px;
     z-index: 10;
+}
+
+._hidden {
+    display: none;
 }
 .popup-content{
     display: flex;
@@ -267,6 +270,9 @@ ul {
   padding-left: 35px;
 }
 
+.menu_header_button {
+    width: 100%;
+}
 .nav-link {
     font-size: 13px;
     color: #ffffff;
@@ -788,6 +794,7 @@ ul {
     width: 33%;
     flex-direction: column;
     padding: 5px 20px 30px;
+    align-items: center;
 
 }
 .shop-item-content {
@@ -924,3 +931,6 @@ ul {
     text-decoration: none;
 }
 /* tablet */
+@media (min-width: 768px) and (max-width:1199px) {
+    
+}
