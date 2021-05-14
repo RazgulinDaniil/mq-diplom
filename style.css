@@ -69,9 +69,9 @@ ul {
 }
 
 .close {
-  position: absolute;
-  right: 5px;
-  top: -20px;
+  position: relative;
+  left: 335px;
+  top: -70px;
   width: 19px;
   height: 19px;
   opacity: 0.3;
@@ -240,7 +240,8 @@ ul {
 }
 
 .head-wrapper {
-  width: 1200px;
+    width: 100%;
+  max-width: 1200px;
   margin: auto;
   padding: 0 15px;
 }
@@ -260,6 +261,10 @@ ul {
     height: auto;
 }
 
+.menu {
+    display: flex;
+}
+
 .menu-list {
     display: flex;
     flex-wrap: nowrap;
@@ -271,8 +276,10 @@ ul {
 }
 
 .menu_header_button {
+    display: none;
     width: 100%;
-}
+    padding-left: 35px;
+}  
 .nav-link {
     font-size: 13px;
     color: #ffffff;
@@ -288,8 +295,9 @@ ul {
 
 .title-intro {
     margin: 135px auto 0px;
+    text-transform: uppercase;
     text-align: center;
-    max-width: 680px;
+    max-width: 690px;
     padding-bottom: 144px;
     font-size: 45px;
     font-weight: bold;
@@ -334,7 +342,6 @@ ul {
 .trends-list {
     display: flex;
     width: 100%;
-    max-width: 1660px;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
@@ -353,19 +360,23 @@ ul {
 }
 
 .trends-background1 {
-    background-image:url("/Images/trends1.png");
+    background:url("/Images/trends1.png") 0 0 no-repeat;
+    background-size: cover;
 }
 
 .trends-background2 {
-    background-image:url("/Images/trends2.png");
+    background:url("/Images/trends2.png") 0 0 no-repeat;
+    background-size: cover;
 }
 
 .trends-background3 {
-    background-image:url("/Images/trends3.png");
+    background:url("/Images/trends3.png") 0 0 no-repeat;
+    background-size: cover;
 }
 
 .trends-background4 {
-    background-image: url("/Images/trends4.png");
+    background: url("/Images/trends4.png") 0 0 no-repeat;
+    background-size: cover;
 }
 .trends-list-item:nth-child(-n+3) {
   margin-right: 2px;
@@ -408,7 +419,8 @@ ul {
 .main-container {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: auto;
     padding: 0 15px;
 }
@@ -425,7 +437,7 @@ ul {
     display: flex;
 }
 
-.post-list-picture {
+.chapter-picture {
     width: 100%;
     max-width: 380px;
 }
@@ -615,7 +627,7 @@ ul {
     background-color: #b59f5b;
     border: none;
     outline: none;
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
+    background-image: url("/Images/search_button.png");
     background-size: 18px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -662,6 +674,7 @@ ul {
     margin-top: 17px;
     
     text-align: center;
+    font-weight: bold;
     color: white;
     text-transform: uppercase;
 
@@ -702,11 +715,8 @@ ul {
     border: 4px solid #eeeeee;
 }
 
-.tags-list-item:nth-child(n+1) {
+.tags-list-item {
     margin-left: 6px;
-}
-
-.tags-list-item:nth-child(n+4) {
     margin-top: 6px;
 }
 
@@ -730,7 +740,7 @@ ul {
 }
 
 .theme-section {
-    padding: 18px 0;
+    padding: 12px 0;
     border-bottom: 1px solid #eee;
 }
 
@@ -806,7 +816,7 @@ ul {
     border: 3px solid #b59f5b;
     opacity: 0.5;
     width: 345px;
-    height: 265px;
+    height: calc(100% + 100px);
     top: -40px;
     left: -20px;
 
@@ -834,6 +844,7 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     align-items:center;
+    font-weight: bold;
 }
 
 .old_price {
@@ -860,6 +871,7 @@ ul {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 /*footer*/
@@ -868,7 +880,6 @@ ul {
 }
 
 .footer-shell-wrapper {
-  width: 1200px;
   margin: auto;
   padding: 0 15px;
 }
@@ -898,24 +909,24 @@ ul {
 }
 
 .social-link-twitter {
-    margin: 0;
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg");
+    background: url("/Images/twitter.png") 0 0 no-repeat;
+    background-size: 20px;
 }
 
 .social-link-pinterest {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg");
+    background: url("/Images/pinterest.png") 0 0 no-repeat;
 }
 
 .social-link-facebook {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg");
+    background: url("/Images/facebook.png") 0 0 no-repeat;
 }
 
 .social-link-instagram {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg");
+    background: url("/Images/instagram.png") 0 0 no-repeat;
 }
 
 .social-link-tumblr {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+    background: url("/Images/tumblr.png") 0 0 no-repeat;
 }
 
 .footer-copyright {
@@ -932,5 +943,50 @@ ul {
 }
 /* tablet */
 @media (min-width: 768px) and (max-width:1199px) {
+    .menu-list {
+        display: none;
+        transition: 0.5s;
+        motion: auto;
+    }
+    .menu_header_button {
+        display: block;
+    }
+    .menu-list-open {
+        display: flex;
+    }
+
+
+    .trends-list {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .trends-list-item {
+        width: calc(50% - 1.5px);
+        margin-top: 3px;
+    }
     
+    .trends-list-item:nth-child(-n+3) {
+        margin-right: 0;
+    }
+
+    .post-list-chapter {
+        display: block;
+    }
+
+    .chapter-picture {
+        width: 100%; 
+        max-width: 790px;
+    }
+
+    .chapter-frame {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+
+    .side-bar {
+        margin-left: 30px;
+    }
 }
+
