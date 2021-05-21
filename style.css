@@ -958,10 +958,6 @@ ul {
     }
     .menu-list-open {
         display: flex;
-        position: absolute;
-        top: 35px;
-        left: 0;
-        right: 0;
     }
 
 
@@ -1007,8 +1003,12 @@ ul {
 
     .menu-list-open {
         flex-direction: column;
+        position: absolute;
+        top: 35px;
+        left: 0;
+        right: 0;
     }
-    
+
     .title-intro {
         font-size: 26px;
         line-height: 36px;
